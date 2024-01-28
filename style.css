@@ -15,7 +15,7 @@ body {
     display: flex;
     margin-left: 10px;
     color:red;
-    font-size: xx-large;
+    font-size: large;
 
 }
 
@@ -30,21 +30,21 @@ body {
 .nav-content2{
     margin-left: 20px;
     margin-right: 20px;
-    font-size: xx-large;
+    font-size: large;
 
 
 }
 .nav-content3{
     margin-left:auto;
     margin-right: 20px;
-    font-size: xx-large;
+    font-size: large;
 
 }
 .nav-content1{
     text-align: end;
     display: flex;
     margin-top: 50px;
-    font-size: xx-large;
+    font-size: large;
 }
 
 .checkbox{
@@ -96,8 +96,8 @@ body {
 .checkbox::after{
     content: "";
     position: absolute;
-    height: 120vh;
-    width: 200vw;
+    height: 300vh;
+    width: 156.8vw;
     background: #2b2b2b;
     top: 50rem;
     left: 40em;
@@ -115,19 +115,20 @@ body {
    display: flex;
    position: absolute;
    top: 25%;
-   left: 25%;
+   left: 35%;
    right: 5%;
-   font-size: xx-large;
+   font-size: large;
 }
 .card-2{
     display: flex;
     position: relative;
+
 }
 #profil{
     width: 400px;
     animation: img 8s ease-in-out infinite;
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    border:2px solid red
+    border:1px solid red;
 }
 @keyframes img{
     0%{
@@ -139,4 +140,15 @@ body {
     100%{
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
+}
+.abilitati{
+    display: flex;
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    right: 5%;
+    font-size: large;
+}
+.linkdin{
+    text-decoration: none;
 }
