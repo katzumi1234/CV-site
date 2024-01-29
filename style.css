@@ -1,14 +1,13 @@
 *{
     box-sizing: border-box;
 }
-
 body {
     display: grid;
     font-family: Arial, Helvetica, sans-serif;
     background: #2b2b2b;
     margin-top: 0%;
     margin-left: 0%;
-    /* overflow-y: scroll; */
+     overflow-x: hidden; 
 }
 /* body::-webkit-scrollbar {
     display: none;
@@ -25,7 +24,7 @@ body {
     position: relative;
     margin: 20px;
     color:red;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .nav-bar{
@@ -42,19 +41,18 @@ body {
 .nav-content2{
 display:flex;
 position: relative;
-left:163rem;
+left:118rem;
 margin:20px;
 text-decoration: none;
 color:#000000;
-
-font-size: xx-large;
+font-size: x-large;
 }
 .nav-content3{
     display:flex;
 position: relative;
-    left:163rem;
+    left:118rem;
     margin:20px;
-    font-size: xx-large;
+    font-size: x-large;
     color:#000000;
     text-decoration: none;
 
@@ -63,7 +61,7 @@ position: relative;
     text-align: end;
     display: flex;
     margin-top: 50px;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .checkbox{
@@ -139,7 +137,7 @@ position: relative;
    position: absolute;
    top: 25%;
    left: 30%;
-   right: 5%;
+   right: -15%;
    font-size: large;
 }
 .card-2{
@@ -272,3 +270,433 @@ position: relative;
     top: 110rem;
     font-size: x-large;
 }
+
+
+@media screen and (max-width: 600px) and (min-width: 400px) {
+    body {
+        display: grid;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #2b2b2b;
+        margin-top: 0%;
+        margin-left: 0%;
+         overflow-x:hidden; 
+    }
+    
+    .name {
+        text-decoration: none;
+        display: flex;
+        position: relative;
+        margin: 2px;
+        color:red;
+        font-size: small;
+    }
+    
+    .nav-bar{
+        display: flex;
+        position: fixed;
+    }
+    .nav-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        text-decoration: none;
+        margin-top: 13px;
+    
+    }
+    .nav-content2{
+    display:flex;
+    position: relative;
+    left:4rem;
+    margin:5px;
+    text-decoration: none;
+    color:#000000;
+    font-size: small;
+    }
+    .nav-content3{
+        display:flex;
+    position: relative;
+        left: 4rem; 
+        margin:5px;
+        font-size: small;
+        color:#000000;
+        text-decoration: none;
+    
+    }
+    .nav-content1{
+        text-align: end;
+        display: flex;
+        margin-top: 5px;
+        font-size: small;
+        text-decoration: none;
+    }
+    
+    .checkbox{
+        display: flex;
+        height: 30px;
+        width: 60px;
+        background: #fff;
+        appearance: none;
+        border-radius: 30px;
+        box-shadow: inset 0 4px 30px rgba(0,0,0,0.1),
+                    inset 0 4px 4px rgba(0,0,0,0.1),
+                    inset 0 -2px 2px rgba(0,0,0,0.1);
+        position: relative;
+        outline: none;
+        cursor: pointer;
+        transition: 0.5s; 
+        top:3rem;           
+    }
+    
+    .checkbox::before{
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        background: linear-gradient(to bottom,#444,#222);
+        border-radius: 60px;
+        transform: scale(0.9);
+        transition: 0.5s;
+        box-shadow: 0 8px 40px rgba(0,0,0,0.5),
+                    inset 4px 4px rgba(255,255,255,0.2),
+                    inset -4px 4px rgba(255,255,255,0.2);
+    }
+    
+    .checkbox:checked{
+        background: #222;
+        box-shadow: inset 0 1px 30px rgba(0,0,0,0.1),
+                    inset 0 1px 4px rgba(0,0,0,0.1),
+                    inset 0 -2px 2px rgba(0,0,0,0.05);
+    }
+    
+    .checkbox:checked::before{
+        left: 30px;
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1),
+                    inset 2px 2px rgba(255,255,255,1),
+                    inset -2px 2px rgba(255,255,255,1);
+        background: linear-gradient(to bottom,#eaeaea,#f9f9f9);            
+    }
+    
+    .checkbox::after{
+        content: "";
+        position: absolute;
+        height: 690vh;
+        width: 450vw;
+        background:  #f8f8f8;
+        top: 25rem;
+        left: 20em;
+        right: 25em;
+        z-index: -1;
+        transform: translate(-25%,-25%);
+        transition: 0.5s;
+        
+    
+    }
+    
+    .checkbox:checked::after{
+        background: #2b2b2b;
+    }
+    
+    .continer{
+       display: flex;
+       position: absolute;
+       top: 12.5%;
+       left: 12.5%;
+       right: 1%;
+       font-size: small;
+    }
+    .card-2{
+        display: flex;
+        position: relative;
+        left: -5%;
+    
+    }
+    #profil{
+        width: 120px;
+        height: 120px;}
+
+
+    .abilitati{
+        display: flex;
+        position: absolute;
+        top:680px;
+        font-size: small;
+    }
+    .linkdin{
+        text-decoration: none;
+    }
+    
+    .image{
+        margin-left: 10px;
+        margin-right: 20px;
+        
+    } 
+    
+
+.card-about{
+    display: flex;
+    position: absolute;
+    top:82rem;
+    
+
+}
+.image-about{
+    display: flex;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px 2px rgb(255, 217, 0);
+    
+}
+.about{
+    display:flex;
+    position: relative;
+    left:5rem;
+    bottom: 5rem;
+    top:0.1rem;
+ 
+}
+.about-title{
+    display: flex;
+    position: relative;
+    font-size: 30px ;
+    left: 1rem;
+    top:6rem;
+}
+.about-text{
+    display: flex;
+    position: relative;
+    top: 8rem;
+    padding-right: 1px;
+    line-height: 1.6;
+}
+.text-descriere{
+    display: flex;
+    position: relative;
+    padding-right: 1px;
+    padding-bottom: 20px;
+    line-height: 1.6;
+}
+.projects{
+    display: flex;
+    position: relative;
+    top: 110rem;
+    font-size: x-large;
+} 
+  }
+  @media screen and (max-width: 400px ) {
+    body {
+        display: grid;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #2b2b2b;
+        margin-top: 0%;
+        margin-left: 0%;
+         overflow-x:hidden; 
+    }
+    
+    .name {
+        text-decoration: none;
+        display: flex;
+        position: relative;
+        margin: 2px;
+        color:red;
+        font-size: small;
+    }
+    
+    .nav-bar{
+        display: flex;
+        position: fixed;
+    }
+    .nav-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        text-decoration: none;
+        margin-top: 13px;
+    
+    }
+    .nav-content2{
+    display:flex;
+    position: relative;
+    left:4rem;
+    margin:5px;
+    text-decoration: none;
+    color:#000000;
+    font-size: small;
+    }
+    .nav-content3{
+        display:flex;
+    position: relative;
+        left: 4rem; 
+        margin:5px;
+        font-size: small;
+        color:#000000;
+        text-decoration: none;
+    
+    }
+    .nav-content1{
+        text-align: end;
+        display: flex;
+        margin-top: 5px;
+        font-size: small;
+        text-decoration: none;
+    }
+    
+    .checkbox{
+        display: flex;
+        height: 30px;
+        width: 60px;
+        background: #fff;
+        appearance: none;
+        border-radius: 30px;
+        box-shadow: inset 0 4px 30px rgba(0,0,0,0.1),
+                    inset 0 4px 4px rgba(0,0,0,0.1),
+                    inset 0 -2px 2px rgba(0,0,0,0.1);
+        position: relative;
+        outline: none;
+        cursor: pointer;
+        transition: 0.5s; 
+        top:3rem;           
+    }
+    
+    .checkbox::before{
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        background: linear-gradient(to bottom,#444,#222);
+        border-radius: 60px;
+        transform: scale(0.9);
+        transition: 0.5s;
+        box-shadow: 0 8px 40px rgba(0,0,0,0.5),
+                    inset 4px 4px rgba(255,255,255,0.2),
+                    inset -4px 4px rgba(255,255,255,0.2);
+    }
+    
+    .checkbox:checked{
+        background: #222;
+        box-shadow: inset 0 1px 30px rgba(0,0,0,0.1),
+                    inset 0 1px 4px rgba(0,0,0,0.1),
+                    inset 0 -2px 2px rgba(0,0,0,0.05);
+    }
+    
+    .checkbox:checked::before{
+        left: 30px;
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1),
+                    inset 2px 2px rgba(255,255,255,1),
+                    inset -2px 2px rgba(255,255,255,1);
+        background: linear-gradient(to bottom,#eaeaea,#f9f9f9);            
+    }
+    
+    .checkbox::after{
+        content: "";
+        position: absolute;
+        height: 690vh;
+        width: 450vw;
+        background:  #f8f8f8;
+        top: 25rem;
+        left: 20em;
+        right: 25em;
+        z-index: -1;
+        transform: translate(-25%,-25%);
+        transition: 0.5s;
+        
+    
+    }
+    
+    .checkbox:checked::after{
+        background: #2b2b2b;
+    }
+    
+    .continer{
+       display: flex;
+       position: absolute;
+       top: 12.5%;
+       left: 12.5%;
+       right: 1%;
+       font-size: small;
+    }
+    .card-2{
+        display: flex;
+        position: relative;
+        left: -5%;
+    
+    }
+    #profil{
+        width: 120px;
+        height: 120px;}
+
+
+    .abilitati{
+        display: flex;
+        position: absolute;
+        top:680px;
+        font-size: small;
+    }
+    .linkdin{
+        text-decoration: none;
+    }
+    
+    .image{
+        margin-left: 10px;
+        margin-right: 20px;
+        
+    } 
+    
+
+.card-about{
+    display: flex;
+    position: absolute;
+    top:82rem;
+    
+
+}
+.image-about{
+    display: flex;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px 2px rgb(255, 217, 0);
+    
+}
+.about{
+    display:flex;
+    position: relative;
+    left:5rem;
+    bottom: 5rem;
+    top:0.1rem;
+ 
+}
+.about-title{
+    display: flex;
+    position: relative;
+    font-size: 30px ;
+    left: 1rem;
+    top:6rem;
+}
+.about-text{
+    display: flex;
+    position: relative;
+    top: 8rem;
+    padding-right: 1px;
+    line-height: 1.6;
+}
+.text-descriere{
+    display: flex;
+    position: relative;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    line-height: 1.6;
+}
+.projects{
+    display: flex;
+    position: relative;
+    top: 110rem;
+    font-size: x-large;
+} 
+  }
